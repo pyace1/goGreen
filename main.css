@@ -28,7 +28,17 @@ header{
 	background-position:center;
 	background-size:cover;
 	text-align:center;
-	font-family: 'Pacifico', cursive;
+	padding: 200px;
+}
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    color: var(--blue);
+    margin-bottom: 30px;
+}
+header p {
+    font-weight: 300;
+    font-size: 1.3rem;
 }
 button {
     background: var(--orange);
@@ -50,6 +60,11 @@ button::hover{
 .container{
 	width:70%;
 	margin:auto;
+}
+.container::after {
+    display: block;
+    content: "";
+    clear: both;
 }
 /******************
 one
@@ -76,4 +91,115 @@ one
 }
 .one article:nth-child(3) {
     padding-top: 60px;
+}
+/******************
+two
+******************/
+.two {
+    background: var(--orange);
+    padding: 80px 0;
+    text-align: center;
+    color: var(--white);
+}
+.two h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+.two blockquote {
+    opacity: .6;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+.two h5 {
+    font-size: 1.1rem;
+}
+.two p {
+    opacity: .6;
+}
+/******************
+three
+******************/
+.three {
+    padding: 80px 0;
+}
+.three article {
+    width: 33%;
+    float: left;
+}
+.three article .wrapper {
+    margin: 30px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+}
+.three .img1 {
+    background-image: url(img/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+.three .img2 {
+    background-image: url(img/img2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+.three .img3 {
+    background-image: url(img/img3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+.three .text {
+    padding: 30px;
+    text-align: justify;
+}
+.three h3 {
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+/******************
+footer
+******************/
+footer {
+    background: var(--blue);
+    padding: 80px 0;
+    text-align: center;
+    color: var(--white);
+}
+footer h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+footer .three-columns article {
+    width: 33%;
+    float: left;
+    padding: 30px
+}
+footer i {
+    color: var(--orange);
+}
+/******************
+R E S P O N S I V E
+******************/
+@media(max-width: 768px) {
+    header  {
+        padding: 40px
+    }
+	.one article {
+			width: 100%;
+		}
+	.container {
+			width: 90%;
+		}
+	.one article:nth-child(1) {
+			text-align: left;
+		}
+	.three article {
+			width: 100%;
+			float: left;
+		}
+	footer .three-columns article {
+        width: 100%;
+    }
 }
